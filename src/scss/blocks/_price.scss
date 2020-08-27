@@ -1,0 +1,141 @@
+.price {
+   &-block {
+      text-align: center;
+   }
+
+   &-title {
+      margin-bottom: 50px;
+   }
+   &-subtitle {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 60px;
+   }
+
+   &-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      
+      &--block {
+         width: 32%;
+         height: 410px;
+         border: 1px solid #e8e8e8;
+         padding-bottom: 45px;
+         margin-bottom: 30px;
+      }
+   }
+
+   &-image {
+      max-width: 100%;
+      height: 260px;
+      overflow: hidden;
+      margin-bottom: 40px;
+      position: relative;
+
+      & img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &-text {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 30px;
+   }
+
+   &-more {
+      & a {
+         display: inline-block;
+         font-size: 16px;
+         font-weight: 700;
+         position: relative;
+         &::after {
+            content: '';
+            display: block;
+            height: 2px;
+            background: #ffd200;
+            margin-top: 3px;
+            width: 95px;
+         }
+      }
+   }
+
+   &-wrap {
+      &--block {
+         &:hover {
+            cursor: pointer;
+            box-shadow: 2px 15px 20px #e8e8e8, -2px 15px 20px #e8e8e8;
+            & .price-image::after {
+               content: '';
+               display: block;
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               background: linear-gradient(to top, #ffd200 0%, transparent 70%);
+               opacity: 0.8;
+            }
+
+            & .price-more a::after {
+               position: absolute;
+               top: 7px;
+               height: 12px;
+               z-index: -1;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1120px) {
+   .price {   
+      &-wrap {
+         justify-content: space-around;
+      }
+   }
+}
+// стили для средних планшетов - начало
+@media screen and (max-width: 767px) {
+   .section {
+      padding: 30px 0px;
+   }
+   .price {
+      &-title {
+         font-size: 25px;
+         line-height: 30px;
+         margin-bottom: 30px;
+      }
+      &-subtitle {
+         display: block;
+         font-size: 20px;
+         margin-bottom: 30px;
+      }
+      &-wrap {
+         flex-direction: column;
+         &--block {
+            width: 100%;
+         }
+      }
+   }
+}
+// стили для телефонов - начало
+@media screen and (max-width: 479px) {
+   .price {
+      &-title {
+         font-size: 18px;
+         line-height: 20px;
+         margin-bottom: 20px;
+      }
+      &-subtitle {
+         display: block;
+         font-size: 14px;
+         margin-bottom: 20px;
+      }
+   }
+}

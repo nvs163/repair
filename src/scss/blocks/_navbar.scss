@@ -1,0 +1,57 @@
+.navbar {
+   padding: 8px 0px;
+
+   &-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__info {
+      display: flex;
+      align-items: center;
+      text-align: right;
+   }
+   &__address {
+      display: flex;
+      flex-direction: column;
+   }
+   &__phone {
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 10px;
+   }
+   &__button {
+      margin-left: 30px;
+      background-color: #ffd200;
+      &:hover {
+         background-color: lighten(#ffd200, 10%);
+      }
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .navbar {
+      &__logo {
+         max-width: 80px;
+      }
+      &__contacts {
+         display: none;
+      }
+      &__button {
+         padding: 12px 23px;
+      }
+   }
+}
+
+@media screen and (max-width: 479px) {
+   .navbar {
+      &__logo {
+         max-width: 70px;
+      }
+      &__button {
+         padding: 8px 10px;
+         font-size: 10px;
+      }
+   }
+}

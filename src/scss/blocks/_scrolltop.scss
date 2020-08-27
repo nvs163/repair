@@ -1,0 +1,46 @@
+.scrolltop {
+   display: block;
+   position: fixed;
+   left: 50%;
+   bottom: 50%;
+   margin-left: 700px;
+   z-index: 999;
+
+   &_active {
+      display: block;
+   }
+
+   &-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 55px;
+      height: 55px;
+      border: 2px solid #ffd200;
+      border-radius: 50%;
+
+   & img {
+      vertical-align: bottom;
+      max-width: 70%;
+   }
+   }
+}
+
+.idTop {
+   & a {
+   position: fixed;
+   z-index: 9999;
+   bottom: 0%;
+   right: 0%;
+   background: url('/src/img/scroll/scrolltop.png') no-repeat;
+   height: 64px;
+   width: 64px;
+   opacity: .6;
+   color: transparent;
+   padding: 10px;
+   margin: 5px 15px 15px 5px;
+   & a:hover {
+   opacity: 1;
+   }
+   }
+}

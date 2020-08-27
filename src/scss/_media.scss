@@ -1,0 +1,29 @@
+/* Стили для десктопа - начало */
+@media screen and (max-width: 1200px) {
+   .container {
+      max-width: 100%;
+   }
+}
+@media screen and (max-width: 1120px) {
+   .container {
+      max-width: 100%;
+   }
+}
+/* стили для больших планшетов - начало */
+@media screen and (max-width: 991px) {
+   .container {
+      max-width: 100%;
+   }
+}
+/* стили для средних планшетов - начало */
+@media screen and (max-width: 767px) {
+   .container {
+      max-width: 100%;
+   }
+}
+/* стили для телефонов - начало */
+@media screen and (max-width: 479px) {
+   .container {
+      max-width: 100%;
+   }
+}
