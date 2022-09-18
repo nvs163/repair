@@ -10,10 +10,10 @@
 
       <nav class="navbar">
          <div class="container">
-            <div class="navbar-block">
-               <div class="navbar__logo">
-                  <img src="img/navbar/logo.png" alt="logo">
-               </div>
+            <nav class="navbar-block">
+               <a class="navbar__logo" href="#">
+                  <img src="./img/navbar/logo.png" alt="logo">
+               </a>
                <!-- /.navbar__logo -->
                <div class="navbar__info">
                   <div class="navbar__contacts">
@@ -26,7 +26,7 @@
                   <button class="button navbar__button" id="button">Перезвоните мне</button> <!-- /.button navbar__button -->
                </div>
                <!-- /.navbar__info -->
-            </div>
+            </nav>
             <!-- /.navbar-block -->
          </div>
          <!-- /.container -->
@@ -48,7 +48,7 @@
                      <ul class="hero-list">
                         <li class="hero-list__item">
                            <div class="hero-list__image">
-                              <img src="img/hero/clock-circular-outline.png" alt="">
+                              <img src="./img/hero/clock-circular-outline.png" alt="">
                            </div>
                            <span class="hero-list__text">
                               Точно соблюдаем сроки
@@ -57,7 +57,7 @@
                         <!-- /.hero-text__item -->
                         <li class="hero-list__item">
                            <div class="hero-list__image">
-                              <img src="img/hero/calculator.png" alt="">
+                              <img src="./img/hero/calculator.png" alt="">
                            </div>
                            <span class="hero-list__text">
                               Рассчитаем смету на работу и материалы в день обращения
@@ -66,7 +66,7 @@
                         <!-- /.hero-text__item -->
                         <li class="hero-list__item">
                            <div class="hero-list__image">
-                              <img src="img/hero/paint-board-and-brush.png" alt="">
+                              <img src="./img/hero/paint-board-and-brush.png" alt="">
                            </div>
                            <span class="hero-list__text">
                               Предложим более 1000 вариантов исполнения дизайна вашего жилья
@@ -78,7 +78,7 @@
                   </div>
                   <!-- /.hero-text -->
                   <div class="hero-image">
-                     <img src="img/hero/main-img.png" alt="План квартиры">
+                     <img src="./img/hero/main-img.png" alt="План квартиры">
                   </div>
                   <!-- /.hero-image -->
                </div>
@@ -550,26 +550,19 @@
          <div class="modal-dialog">
             <button class="modal-dialog__close" id="close">&times;</button>
             <h4 class="modal-dialog__title">Оставьте заявку</h4>
+
+            <form action="" class="form questions-offer__form">
+               <input type="text" class="input questions-offer__input" placeholder="Ваше имя">
+               <input type="tel" class="input questions-offer__input" placeholder="Ваш телефон">
+               <button class="button questions-offer__button">Рассчитать стоимость</button>
+            </form>
          </div>
          <!-- /.modal-dialog -->
       </div>
       <!-- /.modal -->
-      <!--
-      <div class="scrolltop" id="scrollTop">
-         <button class="scrolltop-button">
-            <img src="/src/img/scroll/scrolltop.png" alt="">
-         </button>
-      </div>
-      <!-- /.scrolltop -->
-      <!--
-      <div class="idTop">
-         <a href="#">
-            <button></button>
-         </a>
-      </div> -->
 
       <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-      <script src="js/main.js"></script>
-      <script src="js/scrolltop.js"></script>
+      <script src="./js/main.js"></script>
+
    </body>
 </html>

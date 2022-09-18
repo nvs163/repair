@@ -83,7 +83,7 @@ body a {
 .container {
   max-width: 1170px;
   margin: 0px auto;
-  padding: 0px;
+  padding: 0px 15px;
 }
 
 img {
@@ -143,8 +143,8 @@ img {
 
 @font-face {
   font-family: 'Museo Sans Cyrl';
-  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-100.eot");
-  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-100.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-100.woff2") format("woff2"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-100.ttf") format("truetype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-100.svg#MuseoSansCyrl-100") format("svg"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-100.otf") format("otf");
+  src: url("./fonts/MuseoSansCyrl/MuseoSansCyrl-100.eot");
+  src: url("./fonts/MuseoSansCyrl/MuseoSansCyrl-100.eot?#iefix") format("embedded-opentype"), url("./fonts/MuseoSansCyrl/MuseoSansCyrl-100.woff2") format("woff2"), url("./fonts/MuseoSansCyrl/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-100.ttf") format("truetype"), url("./fonts/MuseoSansCyrl/MuseoSansCyrl-100.svg#MuseoSansCyrl-100") format("svg"), url("./fonts/MuseoSansCyrl/MuseoSansCyrl-100.otf") format("otf");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -152,8 +152,8 @@ img {
 
 @font-face {
   font-family: 'Museo Sans Cyrl';
-  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
-  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.otf") format("otf"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff2") format("woff2"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.svg#MuseoSansCyrl-300") format("svg");
+  src: url("./fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: url("./fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("./fonts/MuseoSansCyrl/MuseoSansCyrl-300.otf") format("otf"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff2") format("woff2"), url("./fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype"), url("./fonts/MuseoSansCyrl/MuseoSansCyrl-300.svg#MuseoSansCyrl-300") format("svg");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -161,8 +161,8 @@ img {
 
 @font-face {
   font-family: 'Museo Sans Cyrl';
-  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
-  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.otf") format("otf"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.svg#MuseoSansCyrl-700") format("svg");
+  src: url("./fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("./fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("./fonts/MuseoSansCyrl/MuseoSansCyrl-700.otf") format("otf"), url("./fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff2") format("woff2"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("./fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype"), url("./fonts/MuseoSansCyrl/MuseoSansCyrl-700.svg#MuseoSansCyrl-700") format("svg");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -357,7 +357,7 @@ img {
 }
 
 .offer {
-  background: url("/src/img/offers/offer-bg.jpg") center right/contain no-repeat;
+  background: url("/img/offers/offer-bg.jpg") center right/contain no-repeat;
   position: relative;
 }
 
@@ -592,7 +592,7 @@ img {
 }
 
 .portfolio {
-  background: #f5f5f5 url(/src/img/portfolio/bg-left.png) center repeat-y;
+  background: #f5f5f5 url(/img/portfolio/bg-left.png) 0 repeat-y;
   background-size: 50%;
 }
 
@@ -760,6 +760,7 @@ img {
 }
 
 .price-wrap--block:hover .price-more a::after {
+  content: '';
   position: absolute;
   top: 7px;
   height: 12px;

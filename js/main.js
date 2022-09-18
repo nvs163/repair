@@ -1,6 +1,8 @@
-var button = document.querySelector('#button');
-var modal = document.querySelector('#modal');
-var close = document.querySelector('#close');
+'use strict';
+
+let button = document.querySelector('#button');
+let modal = document.querySelector('#modal');
+let close = document.querySelector('#close');
 
 button.addEventListener('click', function() {
    modal.classList.add('modal_active');
