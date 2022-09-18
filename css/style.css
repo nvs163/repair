@@ -357,7 +357,7 @@ img {
 }
 
 .offer {
-  background: url("/img/offers/offer-bg.jpg") center right/contain no-repeat;
+  background: url("./img/offers/offer-bg.jpg") center right/contain no-repeat;
   position: relative;
 }
 
@@ -592,7 +592,7 @@ img {
 }
 
 .portfolio {
-  background: #f5f5f5 url(/img/portfolio/bg-left.png) 0 repeat-y;
+  background: #f5f5f5 url(./img/portfolio/bg-left.png) 0 repeat-y;
   background-size: 50%;
 }
 
@@ -1122,7 +1122,7 @@ img {
 
 .questions {
   padding: 0;
-  background: url("/src/img/questions/1.jpg") center right/cover no-repeat;
+  background: url(./src/img/questions/1.jpg) center right/cover no-repeat;
   position: relative;
 }
 
@@ -1275,7 +1275,7 @@ img {
   .questions-offer {
     max-width: 100%;
     padding: 30px 20px;
-    background: url("/src/img/questions/1.jpg") center right/cover no-repeat;
+    background: url(./src/img/questions/1.jpg) center right/cover no-repeat;
   }
   .questions-offer__title {
     max-width: 350px;
@@ -1332,7 +1332,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background: url(/src/img/contact/map.jpg) -450px center/cover no-repeat;
+  background: url(./img/contact/map.jpg) -450px center/cover no-repeat;
 }
 
 .contact-block {
@@ -1373,14 +1373,14 @@ img {
 @media screen and (max-width: 1120px) {
   .contact::before {
     content: "";
-    background: url(/src/img/contact/map.jpg) -550px center/cover no-repeat;
+    background: url(./img/contact/map.jpg) -550px center/cover no-repeat;
   }
 }
 
 @media screen and (max-width: 991px) {
   .contact::before {
     content: "";
-    background: url(/src/img/contact/map.jpg) -650px center/cover no-repeat;
+    background: url(./img/contact/map.jpg) -650px center/cover no-repeat;
   }
 }
 
@@ -1400,7 +1400,7 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    background: url(/src/img/contact/map.jpg) center center/cover no-repeat;
+    background: url(./img/contact/map.jpg) center center/cover no-repeat;
     z-index: -1;
   }
   .contact-block {
